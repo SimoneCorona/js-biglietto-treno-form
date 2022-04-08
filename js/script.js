@@ -18,26 +18,39 @@ generate_Btn.addEventListener("click",
         const price_per_km_rounded = (price_per_km.toFixed(2));
         console.log(price_per_km_rounded); 
         
+        //ticket discount type
+        let user_Discount;
+        if (user_Age = document.getElementById(".under_age"))
+        {
+        user_Discount.innerHTML = "Biglietto Minorenne"
+        } 
+        else if (user_Age = document.getElementById(".over_65")) 
+        {
+        user_Discount.innerHTML = "Biglietto Over 65"
+        }
+        else (user_Age = document.getElementById(".legal_age")) 
+        {
+        user_Discount.innerHTML = "Biglietto Standard"
+        }
+        console.log(user_Discount);
+
         // calc discount
         let final_price;
-        if (user_Age = document.querySelector(".under_age"))
+        if (user_Age == document.getElementById(".under_age"))
         {
         price_discount = (price_per_km_rounded * 20 / 100)
         final_price = (price_per_km_rounded - price_discount).toFixed(2);
         } 
-        else if (user_Age = document.querySelector(".over_65")) 
+        else if (user_Age == document.getElementById(".over_65")) 
         {
         price_discount = (price_per_km_rounded * 40 / 100);
         final_price = (price_per_km_rounded - price_discount).toFixed(2);
         }
-        else (user_Age = document.querySelector(".legal_age")); 
+        else (user_Age == document.getElementById(".legal_age")); 
         {
         final_price = parseInt(price_per_km_rounded);
         }
         console.log(final_price);
-
-        // ticket appear
-        myElement.classList.remove(".d-none");
 
         // vagon number
         const user_Vagon = Math.floor((Math.random() * 10) + 1);
@@ -46,16 +59,23 @@ generate_Btn.addEventListener("click",
         // cod CP
         const user_Code = Math.floor((Math.random() * 10000) + 1);
         console.log(user_Code); 
-
+        
+        
+        
         //OUTPUT
         document.getElementById("user_name_stamped").innerHTML = user_Name;
+
+        document.getElementById("user_discount").innerHTML = user_Discount;
 
         document.getElementById("price_travel").innerHTML = final_price;
 
         document.getElementById("user_vagon").innerHTML = user_Vagon;
 
         document.getElementById("user_code").innerHTML = user_Code;
-
+        
+        // // ticket appear
+        // const appear_Ticket = document.getElementById("generate_btn")
+        // appear_Ticket = myElement.classList.remove(".d-none") 
     }
 );
 
@@ -63,6 +83,6 @@ const reset_Btn = document.getElementById("reset_btn")
 console.log(reset_Btn);
 reset_Btn.addEventListener("click",
     function() {
-        myElement.classList.add(".d-none");
+        myElement.classList.remove(".d-none");
     }
 )
