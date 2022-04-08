@@ -48,8 +48,9 @@ h1{
 }
 .buttons-wrapper button{
     font-size: 1.5em;
-    margin-left: 1.5em ;
-    color: red;
+    margin-left: 1.5em;
+    padding: 0.2em 0.5em;
+    color: rgb(230, 34, 34);
     background-color: grey;
 }
 

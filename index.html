@@ -14,24 +14,24 @@
         <div class="row">
             <div>    
                 <h2>Nome e Cognome</h2>
-                <input type="text" placeholder="Inserire nome e cognome">
+                <input type="text" id="user_name" placeholder="Inserire nome e cognome">
             </div>
             <div>    
                 <h2>Km da percorrere</h2>
-                <input type="text" placeholder="Inserire i Km da percorrere">
+                <input type="text" id="user_km" placeholder="Inserire i Km da percorrere">
             </div>
             <div>    
                 <h2>Fascia d' età</h2>
-                <select>
+                <select id="user_age">
                     <option value="" selected></option>
-                    <option value="Sunday">Minorenne</option>
-                    <option value="Monday">Maggiorenne</option>
-                    <option value="Tuesday">Over 65</option>
+                    <option value="under_age">Minorenne</option>
+                    <option value="legal_age">Maggiorenne</option>
+                    <option value="over_65">Over 65</option>
                 </select>       
             </div>
         </div>
         <div class="buttons-wrapper">
-            <button>Genera</button>
+            <button id="generate_btn">Genera</button>
             <button>Annulla</button>
         </div>
     </div>
@@ -44,7 +44,7 @@
             <div class="ticket">
                 <div class="left_ticket">
                     <h3>NOME PASSEGGERO</h3>
-                    <div>Gianni</div>
+                    <div id="user_name_stamped">Gianni</div>
                 </div>
                 <div class="right_ticket">
                     <div>
@@ -53,15 +53,15 @@
                     </div>
                     <div>
                         <p>Carrozza</p>
-                        <span>ccccc</span>
+                        <span id="user_vagon"></span>
                     </div>
                     <div>
                         <p>Codice CP</p>
-                        <span>cccc</span>
+                        <span id="user_code"></span>
                     </div>
                     <div>
                         <p>Costo Biglietto</p>
-                        <span>ccccc</span>
+                        <span id="price_travel"></span>
                     </div>
                 </div>
             </div>
