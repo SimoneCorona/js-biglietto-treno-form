@@ -1,5 +1,88 @@
+/* RESET */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+/* COMMON */
+html{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background-color: rgb(208, 24, 76);
+}
+h1{
+    margin: 1em 0;
+    text-align: center;
+    color: white;
+}
+
+/* first section */
+.container_one{
+    width: 80%;
+    margin:0 auto 1em;
+    background-color: white;
+    border-radius: 20px;
+}
+.container_one .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 1em;
+}
+.container_one .row div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container_one h2{
+    color: red;
+    font-size: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.buttons-wrapper{
+    text-align: center;
+    padding-bottom: 1em;
+}
+.buttons-wrapper button{
+    font-size: 1.5em;
+    margin-left: 1.5em ;
+    color: red;
+    background-color: grey;
+}
+
+/* second section */
+.container_two{
+    width: 80%;
+    margin:0 auto 1em;
+    padding: 1em;
+    background-color: white;
+}
+.ticket{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 100px;
+    border: 2px dashed grey;
+
+}
+.left_ticket{
+    width: 30%;
+    height: 100%;
+    padding: 1em;
+    border: 1px solid grey;
+    background-color: gray;
+
+}
+.right_ticket{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    padding: 1em;
+    line-height: 2em;
+}
+.right_ticket span{
+    font-family: 'Times New Roman', Times, serif;
 }

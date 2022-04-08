@@ -8,9 +8,65 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- first section-->
+    <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    <div class="container_one">
+        <div class="row">
+            <div>    
+                <h2>Nome e Cognome</h2>
+                <input type="text" placeholder="Inserire nome e cognome">
+            </div>
+            <div>    
+                <h2>Km da percorrere</h2>
+                <input type="text" placeholder="Inserire i Km da percorrere">
+            </div>
+            <div>    
+                <h2>Fascia d' età</h2>
+                <select>
+                    <option value="" selected></option>
+                    <option value="Sunday">Minorenne</option>
+                    <option value="Monday">Maggiorenne</option>
+                    <option value="Tuesday">Over 65</option>
+                </select>       
+            </div>
+        </div>
+        <div class="buttons-wrapper">
+            <button>Genera</button>
+            <button>Annulla</button>
+        </div>
+    </div>
     
-
-
+    <!-- second section -->
+    <div>
+        <h1>IL TUO BIGLIETTO</h1>
+        <div class="container_two">
+            <h2>DETTAGLI PASSEGGERO</h2>
+            <div class="ticket">
+                <div class="left_ticket">
+                    <h3>NOME PASSEGGERO</h3>
+                    <div>Gianni</div>
+                </div>
+                <div class="right_ticket">
+                    <div>
+                        <p>Offerta</p>
+                        <span>cccc</span>
+                    </div>
+                    <div>
+                        <p>Carrozza</p>
+                        <span>ccccc</span>
+                    </div>
+                    <div>
+                        <p>Codice CP</p>
+                        <span>cccc</span>
+                    </div>
+                    <div>
+                        <p>Costo Biglietto</p>
+                        <span>ccccc</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="js/script.js" type="text/javascript"></script>
 </body>
 </html>
